@@ -76,6 +76,7 @@ jobs:
             git clone https://github.com/buildroot/buildroot
             export BR_BOUFFALO_OVERLAY_PATH=$(pwd)/buildroot_bouffalo
             cd buildroot
+            git checkout 2023.02
             make BR2_EXTERNAL=$BR_BOUFFALO_OVERLAY_PATH pine64_ox64_defconfig
             make
 
